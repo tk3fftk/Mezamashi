@@ -31,7 +31,7 @@ second= new CronJob({
     }
 });
 // 7:24
-first = new CronJob({
+third = new CronJob({
     cronTime: '*/20 24 7 * * *', // 7:24に20秒ごと
     start: true,
     timeZone: 'Asia/Tokyo',
@@ -41,7 +41,7 @@ first = new CronJob({
     }
 });
 // 7:57
-first = new CronJob({
+fourth = new CronJob({
     cronTime: '*/20 57 7 * * *', // 7:57に20秒ごと
     start: true,
     timeZone: 'Asia/Tokyo',
