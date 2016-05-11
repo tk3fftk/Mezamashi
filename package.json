@@ -1,0 +1,16 @@
+{
+  "name": "Mezamashi",
+  "version": "1.0.0",
+  "description": "Automatic Mezamashi Jyanken",
+  "main": "mezamashi.js",
+  "scripts": {
+  "test": "echo \"Error: no test specified\" && exit 1"
+ },
+  "author": "tktk",
+  "license": "ISC",
+  "dependencies": {
+    "cron": "^1.0.9",
+    "moment": "^2.10.6",
+    "request": "^2.65.0"
+  }
+}
