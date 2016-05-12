@@ -12,17 +12,19 @@ var yellow = endpoint + 'tv_yellow';
 
 // 5:57
 first = new CronJob({
-    cronTime: '*/20 57 5 * * *', // 5:57に20秒ごと
+    cronTime: '*/10 57 5 * * *', // 5:57に10秒ごと
     start: true,
     timeZone: 'Asia/Tokyo',
     onTick: function(){
+        req(endpoint + 'tv_pow');
+        req(eight);
         var hand = Math.floor( Math.random() * 3 ); // 0~2の乱数
         jyanken(hand);
     }
 });
 // 6:57
 second= new CronJob({
-    cronTime: '*/20 57 6 * * *', // 6:57に20秒ごと
+    cronTime: '*/10 57 6 * * *', // 6:57に10秒ごと
     start: true,
     timeZone: 'Asia/Tokyo',
     onTick: function(){
@@ -32,7 +34,7 @@ second= new CronJob({
 });
 // 7:24
 third = new CronJob({
-    cronTime: '*/20 24 7 * * *', // 7:24に20秒ごと
+    cronTime: '*/10 24 7 * * *', // 7:24に10秒ごと
     start: true,
     timeZone: 'Asia/Tokyo',
     onTick: function(){
@@ -42,7 +44,7 @@ third = new CronJob({
 });
 // 7:57
 fourth = new CronJob({
-    cronTime: '*/20 57 7 * * *', // 7:57に20秒ごと
+    cronTime: '*/10 57 7 * * *', // 7:57に10秒ごと
     start: true,
     timeZone: 'Asia/Tokyo',
     onTick: function(){
